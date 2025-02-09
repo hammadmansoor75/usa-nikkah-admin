@@ -86,11 +86,13 @@ const PartnerPreferences = ({partnerPreferences, gender, userId}) => {
             setValue("educationLevel", partnerPreferences?.educationLevel || "");
             setValue("work", partnerPreferences?.work || "");
             setValue("considerSomeoneHavingChildren", partnerPreferences?.considerSomeoneHavingChildren || "");
+            setValue("hijab", partnerPreferences?.hijab || "");
+            setValue("smoke", partnerPreferences?.smoke || "");
             if(gender === 'male'){
-                setValue("hijab", partnerPreferences?.hijab || "");
+                
               }
             if(gender === 'female'){
-                setValue("smoke", partnerPreferences?.smoke || "");
+                
             }
         }
       },[partnerPreferences,setValue])
@@ -167,13 +169,13 @@ const PartnerPreferences = ({partnerPreferences, gender, userId}) => {
 
 
                     <div className="mt-4 flex items-center justify-center gap-4" >
-                        <label className="text-lg font-medium w-1/3 flex justify-end">Relegiousity Prefrence</label>
+                        <label className="text-lg font-medium w-1/3 flex justify-end">Religiousity Preference</label>
                         <Select className="text-sub_text_2"  onValueChange={(value) => setValue("relegiousPrefrence", value)} value={watch("relegiousPrefrence")}  >
                             <SelectTrigger className="h-[40px]">
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="Relegious" >Relegious</SelectItem>
+                                <SelectItem value="Religious" >Religious</SelectItem>
                                 <SelectItem value="Moderate" >Moderate</SelectItem>
                                 <SelectItem value="Liberal" >Liberal</SelectItem>
                                 <SelectItem value="Dont Matter" >Dont Matter</SelectItem>
@@ -227,24 +229,24 @@ const PartnerPreferences = ({partnerPreferences, gender, userId}) => {
 {errors.smoke && <p className="text-red-500 mt-2 text-sm">{errors.smoke.message}</p>}
 
 <div className="mt-4 flex items-center justify-center gap-4" >
-                        <label className="text-lg font-medium w-1/3 flex justify-end">Ethnicity Prefrence</label>
+                        <label className="text-lg font-medium w-1/3 flex justify-end">Ethnicity Preference</label>
                      
                         <Select onValueChange={(value) => setValue("ethnicityPrefrence", value)} value={watch("ethnicityPrefrence")}  >
                             <SelectTrigger className="h-[40px]" >
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="african" >African</SelectItem>
-                                <SelectItem value="african american" >African American</SelectItem>
-                                <SelectItem value="desi/south-asian" >Desi / South Asian</SelectItem>
-                                <SelectItem value="arab/middle-eastren" >Arab / Middle Eastren</SelectItem>
-                                <SelectItem value="caribbean" >Caribbean</SelectItem>
-                                <SelectItem value="east-asian" >East Asian</SelectItem>
-                                <SelectItem value="latino/hispanic" >Latino / Hispanic</SelectItem>
-                                <SelectItem value="white/caucasian" >White / Caucasian</SelectItem>
-                                <SelectItem value="mixed" >Mixed</SelectItem>
-                                <SelectItem value="other" >Other</SelectItem>
-                                <SelectItem value="any/dont-matter" >Any, Doesn’t Matter</SelectItem>
+                                <SelectItem value="African" >African</SelectItem>
+                                <SelectItem value="African American" >African American</SelectItem>
+                                <SelectItem value="Desi / South-Asian" >Desi / South Asian</SelectItem>
+                                <SelectItem value="Arab / Middle-Eastren" >Arab / Middle Eastren</SelectItem>
+                                <SelectItem value="Caribbean" >Caribbean</SelectItem>
+                                <SelectItem value="East-Asian" >East Asian</SelectItem>
+                                <SelectItem value="Latino / Hispanic" >Latino / Hispanic</SelectItem>
+                                <SelectItem value="White / Caucasian" >White / Caucasian</SelectItem>
+                                <SelectItem value="Mixed" >Mixed</SelectItem>
+                                <SelectItem value="Other" >Other</SelectItem>
+                                <SelectItem value="Any" >Any</SelectItem>
                             </SelectContent>
                         </Select>
                         
@@ -260,12 +262,12 @@ const PartnerPreferences = ({partnerPreferences, gender, userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="high school diploma" >High School Diploma</SelectItem>
+                                <SelectItem value="High School Diploma" >High School Diploma</SelectItem>
                                 <SelectItem value="College / University" >College / University</SelectItem>
                                 <SelectItem value="Career Institute" >Career Institute</SelectItem>
                                 <SelectItem value="Masters Degree" >Masters Degree</SelectItem>
                                 <SelectItem value="Skilled Trade" >Skilled Trade</SelectItem>
-                                <SelectItem value="Any, Doesn’t Matter" >Any, Doesn’t Matter</SelectItem>
+                                <SelectItem value="Any" >Any</SelectItem>
                             </SelectContent>
                         </Select>
                         {errors.educationLevel && <p className="text-red-500 mt-2 text-sm">{errors.educationLevel.message}</p>}

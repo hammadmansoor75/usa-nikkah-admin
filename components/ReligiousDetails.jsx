@@ -99,7 +99,7 @@ const ReligiousDetails = ({religiousDetails, gender, userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="Relegious" >Religious</SelectItem>
+                                <SelectItem value="Religious" >Religious</SelectItem>
                                 <SelectItem value="Moderate" >Moderate</SelectItem>
                                 <SelectItem value="Liberal" >Liberal</SelectItem>
                             </SelectContent>

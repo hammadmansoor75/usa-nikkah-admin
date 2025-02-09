@@ -15,7 +15,7 @@ const UsersPage = () => {
   const [filters, setFilters] = useState({
     searchQuery: "",
     id: "",
-    age: "",
+    gender : "",
     adminVerificationStatus: "",
   }); // Filters state
 
@@ -45,8 +45,8 @@ const UsersPage = () => {
       const matchesId =
         !filters.id || user.id.toString().includes(filters.id);
 
-      const matchesAge =
-        !filters.age || user.age.toString() === filters.age;
+      const matchesGender =
+        !filters.gender || user.gender === filters.gender;
 
       const matchesVerification =
         filters.adminVerificationStatus === "" ||
@@ -56,7 +56,7 @@ const UsersPage = () => {
       return (
         matchesNameOrEmail &&
         matchesId &&
-        matchesAge &&
+        matchesGender &&
         matchesVerification
       );
     });
@@ -92,10 +92,10 @@ const UsersPage = () => {
                 className="border h-10 rounded-md py-2 px-4 text-lg"
             />
             <Input
-                type="number"
-                placeholder="Filter by age"
-                value={filters.age}
-                onChange={(e) => handleFilterChange("age", e.target.value)}
+                type="text"
+                placeholder="Filter by Gender"
+                value={filters.gender}
+                onChange={(e) => handleFilterChange("gender", e.target.value)}
                 className="border rounded-md h-10 py-2 px-4 text-lg"
             />
             <select

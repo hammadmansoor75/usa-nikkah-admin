@@ -157,9 +157,9 @@ const PersonalDetails = ({personalDetails , userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="neverMarried" >Never Married</SelectItem>
-                                <SelectItem value="divorced" >Divorced</SelectItem>
-                                <SelectItem value="widowed" >Widowed</SelectItem>
+                                <SelectItem value="Never Married" >Never Married</SelectItem>
+                                <SelectItem value="Divorced" >Divorced</SelectItem>
+                                <SelectItem value="Widowed" >Widowed</SelectItem>
                             </SelectContent>
                         </Select>
                         {errors.maritalStatus && <p className="text-red-500 mt-2 text-sm">{errors.maritalStatus.message}</p>}
@@ -172,7 +172,7 @@ const PersonalDetails = ({personalDetails , userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="none" >None</SelectItem>
+                                <SelectItem value="None" >None</SelectItem>
                                 <SelectItem value="1" >1</SelectItem>
                                 <SelectItem value="2" >2</SelectItem>
                                 <SelectItem value="3" >3</SelectItem>
@@ -189,10 +189,10 @@ const PersonalDetails = ({personalDetails , userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="n/a" >N/A</SelectItem>
-                                <SelectItem value="living with me" >Living with me</SelectItem>
-                                <SelectItem value="not living with me" >Not Living with me</SelectItem>
-                                <SelectItem value="shared custody" >Shared Custody</SelectItem>
+                                <SelectItem value="N/A" >N/A</SelectItem>
+                                <SelectItem value="Living With Me" >Living with me</SelectItem>
+                                <SelectItem value="Not Living With Me" >Not Living with me</SelectItem>
+                                <SelectItem value="Shared Custody" >Shared Custody</SelectItem>
                             </SelectContent>
                         </Select>
                         {errors.childrenLiving && <p className="text-red-500 mt-2 text-sm">{errors.childrenLiving.message}</p>}
@@ -221,16 +221,16 @@ const PersonalDetails = ({personalDetails , userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="african" >African</SelectItem>
-                                <SelectItem value="african american" >African American</SelectItem>
-                                <SelectItem value="desi/south-asian" >Desi / South Asian</SelectItem>
-                                <SelectItem value="arab/middle-eastren" >Arab / Middle Eastren</SelectItem>
-                                <SelectItem value="caribbean" >Caribbean</SelectItem>
-                                <SelectItem value="east-asian" >East Asian</SelectItem>
-                                <SelectItem value="latino/hispanic" >Latino / Hispanic</SelectItem>
-                                <SelectItem value="white/caucasian" >White / Caucasian</SelectItem>
-                                <SelectItem value="mixed" >Mixed</SelectItem>
-                                <SelectItem value="other" >Other</SelectItem>
+                                <SelectItem value="African" >African</SelectItem>
+                                <SelectItem value="African American" >African American</SelectItem>
+                                <SelectItem value="Desi / South-Asian" >Desi / South Asian</SelectItem>
+                                <SelectItem value="Arab / Middle-Eastren" >Arab / Middle Eastren</SelectItem>
+                                <SelectItem value="Caribbean" >Caribbean</SelectItem>
+                                <SelectItem value="East-Asian" >East Asian</SelectItem>
+                                <SelectItem value="Latino / Hispanic" >Latino / Hispanic</SelectItem>
+                                <SelectItem value="White / Caucasian" >White / Caucasian</SelectItem>
+                                <SelectItem value="Mixed" >Mixed</SelectItem>
+                                <SelectItem value="Other" >Other</SelectItem>
                             </SelectContent>
                         </Select>
                         {errors.ethnicBackground && <p className="text-red-500 mt-2 text-sm">{errors.ethnicBackground.message}</p>}
@@ -244,7 +244,7 @@ const PersonalDetails = ({personalDetails , userId}) => {
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="high school diploma" >High School Diploma</SelectItem>
+                                <SelectItem value="High School Diploma" >High School Diploma</SelectItem>
                                 <SelectItem value="College / University" >College / University</SelectItem>
                                 <SelectItem value="Career Institute" >Career Institute</SelectItem>
                                 <SelectItem value="Masters Degree" >Masters Degree</SelectItem>
